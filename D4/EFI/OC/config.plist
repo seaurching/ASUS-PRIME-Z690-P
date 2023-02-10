@@ -78,6 +78,14 @@
                     <key>Path</key>
                     <string>SSDT-EC-USBX.aml</string>
                 </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string>fixed dsdt</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>dsdt.aml</string>
+                </dict>
             </array>
             <key>Delete</key>
             <array>
@@ -228,7 +236,7 @@
                 <key>EnableSafeModeSlide</key>
                 <true/>
                 <key>EnableWriteUnprotector</key>
-                <false/>
+                <true/>
                 <key>ForceBooterSignature</key>
                 <false/>
                 <key>ForceExitBootServices</key>
@@ -248,7 +256,7 @@
                 <key>ResizeAppleGpuBars</key>
                 <integer>0</integer>
                 <key>SetupVirtualMap</key>
-                <false/>
+                <true/>
                 <key>SignalAppleOS</key>
                 <false/>
                 <key>SyncRuntimePermissions</key>
@@ -284,7 +292,7 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.2</string>
+                    <string>V1.6.3</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -320,7 +328,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.7.5</string>
+                    <string>V1.7.8</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -338,7 +346,7 @@
                     <key>BundlePath</key>
                     <string>BlueToolFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.1</string>
+                    <string>V2.6.4</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -392,7 +400,7 @@
                     <key>BundlePath</key>
                     <string>LucyRTL8125Ethernet.kext</string>
                     <key>Comment</key>
-                    <string>V1.1.0d12</string>
+                    <string>V1.1.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -410,7 +418,7 @@
                     <key>BundlePath</key>
                     <string>RestrictEvents.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.8</string>
+                    <string>V1.0.9</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -500,7 +508,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.2</string>
+                    <string>V2.3.3</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -536,7 +544,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.2</string>
+                    <string>V2.3.3</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -554,7 +562,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.2</string>
+                    <string>V2.3.3</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -572,7 +580,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.2</string>
+                    <string>V2.3.3</string>
                     <key>Enabled</key>
                     <false/>
                     <key>ExecutablePath</key>
@@ -590,7 +598,7 @@
                     <key>BundlePath</key>
                     <string>WhateverGreen.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.1</string>
+                    <string>V1.6.3</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -650,6 +658,8 @@
                 <false/>
                 <key>AppleXcpmForceBoost</key>
                 <false/>
+                <key>CustomPciSerialDevice</key>
+                <false/>
                 <key>CustomSMBIOSGuid</key>
                 <true/>
                 <key>DisableIoMapper</key>
@@ -661,6 +671,8 @@
                 <key>ExtendBTFeatureFlags</key>
                 <true/>
                 <key>ExternalDiskIcons</key>
+                <false/>
+                <key>ForceAquantiaEthernet</key>
                 <false/>
                 <key>ForceSecureBootScheme</key>
                 <false/>
@@ -681,7 +693,7 @@
                 <key>ThirdPartyDrives</key>
                 <true/>
                 <key>XhciPortLimit</key>
-                <false/>
+                <true/>
             </dict>
             <key>Scheme</key>
             <dict>
@@ -704,7 +716,9 @@
                 <key>ConsoleAttributes</key>
                 <integer>0</integer>
                 <key>HibernateMode</key>
-                <string>Auto</string>
+                <string>None</string>
+                <key>HibernateSkipsPicker</key>
+                <false/>
                 <key>HideAuxiliary</key>
                 <false/>
                 <key>LauncherOption</key>
@@ -740,8 +754,8 @@
                 <integer>0</integer>
                 <key>DisplayLevel</key>
                 <integer>2147483650</integer>
-                <key>SerialInit</key>
-                <false/>
+                <key>LogModules</key>
+                <string></string>
                 <key>SysReport</key>
                 <false/>
                 <key>Target</key>
@@ -751,12 +765,8 @@
             <array/>
             <key>Security</key>
             <dict>
-                <key>AllowNvramReset</key>
-                <false/>
                 <key>AllowSetDefault</key>
                 <true/>
-                <key>AllowToggleSip</key>
-                <false/>
                 <key>ApECID</key>
                 <integer>0</integer>
                 <key>AuthRestart</key>
@@ -782,6 +792,40 @@
                 <key>Vault</key>
                 <string>Optional</string>
             </dict>
+            <key>Serial</key>
+            <dict>
+                <key>Custom</key>
+                <dict>
+                    <key>BaudRate</key>
+                    <integer>115200</integer>
+                    <key>ClockRate</key>
+                    <integer>1843200</integer>
+                    <key>DetectCable</key>
+                    <false/>
+                    <key>ExtendedTxFifoSize</key>
+                    <integer>64</integer>
+                    <key>FifoControl</key>
+                    <integer>7</integer>
+                    <key>LineControl</key>
+                    <integer>3</integer>
+                    <key>PciDeviceInfo</key>
+                    <data>/w==</data>
+                    <key>RegisterAccessWidth</key>
+                    <integer>8</integer>
+                    <key>RegisterBase</key>
+                    <integer>1016</integer>
+                    <key>RegisterStride</key>
+                    <integer>1</integer>
+                    <key>UseHardwareFlowControl</key>
+                    <false/>
+                    <key>UseMmio</key>
+                    <false/>
+                </dict>
+                <key>Init</key>
+                <false/>
+                <key>Override</key>
+                <false/>
+            </dict>
             <key>Tools</key>
             <array>
                 <dict>
@@ -795,6 +839,8 @@
                     <true/>
                     <key>Flavour</key>
                     <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
                     <key>Name</key>
                     <string>ControlMsrE2</string>
                     <key>Path</key>
@@ -808,13 +854,15 @@
                     <key>Arguments</key>
                     <string></string>
                     <key>Auxiliary</key>
-                    <false/>
+                    <true/>
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>Flavour</key>
                     <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
                     <key>Name</key>
                     <string>modGRUBShell</string>
                     <key>Path</key>
@@ -835,6 +883,8 @@
                     <true/>
                     <key>Flavour</key>
                     <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
                     <key>Name</key>
                     <string>Memcheck 9.3</string>
                     <key>Path</key>
@@ -855,6 +905,8 @@
                     <true/>
                     <key>Flavour</key>
                     <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
                     <key>Name</key>
                     <string>OpenShell</string>
                     <key>Path</key>
@@ -875,6 +927,8 @@
                     <false/>
                     <key>Flavour</key>
                     <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
                     <key>Name</key>
                     <string>BootKicker.efi</string>
                     <key>Path</key>
@@ -895,6 +949,8 @@
                     <false/>
                     <key>Flavour</key>
                     <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
                     <key>Name</key>
                     <string>ChipTune.efi</string>
                     <key>Path</key>
@@ -915,6 +971,8 @@
                     <false/>
                     <key>Flavour</key>
                     <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
                     <key>Name</key>
                     <string>CleanNvram.efi</string>
                     <key>Path</key>
@@ -935,6 +993,8 @@
                     <false/>
                     <key>Flavour</key>
                     <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
                     <key>Name</key>
                     <string>CsrUtil.efi</string>
                     <key>Path</key>
@@ -955,6 +1015,8 @@
                     <false/>
                     <key>Flavour</key>
                     <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
                     <key>Name</key>
                     <string>GopStop.efi</string>
                     <key>Path</key>
@@ -975,6 +1037,8 @@
                     <false/>
                     <key>Flavour</key>
                     <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
                     <key>Name</key>
                     <string>KeyTester.efi</string>
                     <key>Path</key>
@@ -995,6 +1059,8 @@
                     <false/>
                     <key>Flavour</key>
                     <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
                     <key>Name</key>
                     <string>MmapDump.efi</string>
                     <key>Path</key>
@@ -1015,6 +1081,8 @@
                     <false/>
                     <key>Flavour</key>
                     <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
                     <key>Name</key>
                     <string>OpenControl.efi</string>
                     <key>Path</key>
@@ -1035,6 +1103,8 @@
                     <false/>
                     <key>Flavour</key>
                     <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
                     <key>Name</key>
                     <string>ResetSystem.efi</string>
                     <key>Path</key>
@@ -1048,13 +1118,15 @@
                     <key>Arguments</key>
                     <string></string>
                     <key>Auxiliary</key>
-                    <false/>
+                    <true/>
                     <key>Comment</key>
                     <string>RtcRw.efi</string>
                     <key>Enabled</key>
                     <false/>
                     <key>Flavour</key>
                     <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
                     <key>Name</key>
                     <string>RtcRw.efi</string>
                     <key>Path</key>
@@ -1075,6 +1147,8 @@
                     <false/>
                     <key>Flavour</key>
                     <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
                     <key>Name</key>
                     <string>TpmInfo.efi</string>
                     <key>Path</key>
@@ -1095,6 +1169,8 @@
                     <true/>
                     <key>Flavour</key>
                     <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
                     <key>Name</key>
                     <string>CFGLock.efi</string>
                     <key>Path</key>
@@ -1168,12 +1244,36 @@
                     <string>SystemAudioVolumeDB</string>
                 </array>
             </dict>
-            <key>LegacyEnable</key>
-            <false/>
             <key>LegacyOverwrite</key>
             <false/>
             <key>LegacySchema</key>
-            <dict/>
+            <dict>
+                <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
+                <array>
+                    <string>EFILoginHiDPI</string>
+                    <string>EFIBluetoothDelay</string>
+                    <string>LocationServicesEnabled</string>
+                    <string>SystemAudioVolume</string>
+                    <string>SystemAudioVolumeDB</string>
+                    <string>SystemAudioVolumeSaved</string>
+                    <string>bluetoothActiveControllerInfo</string>
+                    <string>bluetoothInternalControllerInfo</string>
+                    <string>flagstate</string>
+                    <string>fmm-computer-name</string>
+                    <string>fmm-mobileme-token-FMM</string>
+                    <string>fmm-mobileme-token-FMM-BridgeHasAccount</string>
+                    <string>nvda_drv</string>
+                    <string>prev-lang:kbd</string>
+                </array>
+                <key>8BE4DF61-93CA-11D2-AA0D-00E098032B8C</key>
+                <array>
+                    <string>Boot0080</string>
+                    <string>Boot0081</string>
+                    <string>Boot0082</string>
+                    <string>BootNext</string>
+                    <string>BootOrder</string>
+                </array>
+            </dict>
             <key>WriteFlash</key>
             <true/>
         </dict>
@@ -1246,6 +1346,12 @@
                 <integer>0</integer>
                 <key>KeySubsequentDelay</key>
                 <integer>5</integer>
+                <key>PointerDwellClickTimeout</key>
+                <integer>0</integer>
+                <key>PointerDwellDoubleClickTimeout</key>
+                <integer>0</integer>
+                <key>PointerDwellRadius</key>
+                <integer>0</integer>
                 <key>PointerPollMask</key>
                 <integer>-1</integer>
                 <key>PointerPollMax</key>
@@ -1293,6 +1399,8 @@
                     <string></string>
                     <key>Enabled</key>
                     <true/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>AudioDxe.efi</string>
                 </dict>
@@ -1303,6 +1411,8 @@
                     <string></string>
                     <key>Enabled</key>
                     <true/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>HfsPlus.efi</string>
                 </dict>
@@ -1313,6 +1423,8 @@
                     <string></string>
                     <key>Enabled</key>
                     <true/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>OpenCanopy.efi</string>
                 </dict>
@@ -1323,6 +1435,8 @@
                     <string></string>
                     <key>Enabled</key>
                     <true/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>OpenRuntime.efi</string>
                 </dict>
@@ -1332,6 +1446,8 @@
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
+                    <false/>
+                    <key>LoadEarly</key>
                     <false/>
                     <key>Path</key>
                     <string>CrScreenshotDxe.efi</string>
@@ -1343,6 +1459,8 @@
                     <string></string>
                     <key>Enabled</key>
                     <true/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>ResetNvramEntry.efi</string>
                 </dict>
@@ -1352,6 +1470,8 @@
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
+                    <false/>
+                    <key>LoadEarly</key>
                     <false/>
                     <key>Path</key>
                     <string>OpenUsbKbDxe.efi</string>
@@ -1363,8 +1483,34 @@
                     <string></string>
                     <key>Enabled</key>
                     <true/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>UsbMouseDxe.efi</string>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>XhciDxe.efi</string>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>NvmExpressDxe.efi</string>
                 </dict>
             </array>
             <key>Input</key>
@@ -1378,7 +1524,7 @@
                 <key>KeySupportMode</key>
                 <string>Auto</string>
                 <key>KeySwap</key>
-                <false/>
+                <true/>
                 <key>PointerSupport</key>
                 <false/>
                 <key>PointerSupportMode</key>
@@ -1475,7 +1621,7 @@
                 <key>ForgeUefiSupport</key>
                 <false/>
                 <key>IgnoreInvalidFlexRatio</key>
-                <false/>
+                <true/>
                 <key>ReleaseUsbOwnership</key>
                 <false/>
                 <key>ReloadOptionRoms</key>
