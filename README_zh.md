@@ -1,21 +1,19 @@
-# ASUS-PRIME-Z690-P-D4 Hackintosh OpenCore EFI
 
-![image](ScreenShot/Motherboard.png)
 
-### [简体中文](README_zh.md)
 
 ### OpenCore
-
+下载地址：
 [OpenCore](https://github.com/acidanthera/OpenCorePkg)
 
-### OS Version Tested
+### 已测试系统
 
 - macOS Monterey 13.0
 - macOS Ventura  13.1
 - macOS Ventura  13.3
-### Hardware
+- macOS Sonoma 14.0的前一个版本还未测试
+### 硬件
 
-- 主板:ASUS-PRIME-Z690-P-D4无WiFi
+- 主板:ASUS-PRIME-Z690-P-D4 none WiFi
 - Bios版本: PRIME Z690-P D4 BIOS 2014
 - CPU: Intel i7-13700KF
 - RAM: Asgard Freyr 32GB(8G*4) DDR4 3200MHz
@@ -32,16 +30,18 @@
 - 输入设备: 蓝牙鼠标+蓝牙键盘 
 
 
-### Bios Setup
+### Bios 设置
 
 | Name | Option |
 | ----- | --- |
+|resizebar|enabled|
+|XPM|enabled|
+|cfglock|disabled|
 
+### 注意
 
-### Notes
-
- - Use [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) build your own SMBIOS
+ - 使用 [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) 构建你的SMBIOS
  
  - 你必须使用 [RU.efi](RU.efi) 来解锁 `CFG LOCK`,参考视频: [video](https://www.bilibili.com/video/BV1LV4y1N7jF).
  
- - 你必须定制自己的USB Map
+ - 不必定制自己的USB，已经解锁15个USB端口
